@@ -10,15 +10,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonFragmentOne, buttonFragmentTwo;
+    Button buttonFragmentOne, buttonFragmentTwo, buttonFragmentThree, buttonFragmentFour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialize the buttons
         buttonFragmentOne = findViewById(R.id.alexander402_buttonFragmentOne);
         buttonFragmentTwo = findViewById(R.id.alexander402_buttonFragmentTwo);
+        buttonFragmentThree = findViewById(R.id.alexander402_buttonFragmentThree);
+        buttonFragmentFour = findViewById(R.id.alexander402_buttonFragmentFour);
 
         // Load FragmentOne by default
         loadFragment(new FragmentOne402());
@@ -36,6 +39,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 loadFragment(new FragmentTwo402());
+            }
+        });
+
+        // Button to load Fragment Three
+        buttonFragmentThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new FragmentThree402());
+            }
+        });
+
+        // Button to load Fragment Four
+        buttonFragmentFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new FragmentFour402());
             }
         });
     }

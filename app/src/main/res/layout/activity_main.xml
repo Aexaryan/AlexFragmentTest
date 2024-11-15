@@ -8,24 +8,50 @@
         android:id="@+id/alexander402_fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/alexander402_buttonFragmentTwo" />
+        android:layout_above="@id/alexander402_buttonLayout" />
 
-    <!-- Button to switch to Fragment One -->
-    <Button
-        android:id="@+id/alexander402_buttonFragmentOne"
-        android:layout_width="wrap_content"
+    <!-- Horizontal LinearLayout to contain buttons -->
+    <LinearLayout
+        android:id="@+id/alexander402_buttonLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Spring"
+        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" />
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
 
-    <!-- Button to switch to Fragment Two -->
-    <Button
-        android:id="@+id/alexander402_buttonFragmentTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Summer"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true" />
+        <!-- Button to switch to Fragment One -->
+        <Button
+            android:id="@+id/alexander402_buttonFragmentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spring"
+            android:layout_marginLeft="7dp" />
+
+        <!-- Button to switch to Fragment Two -->
+        <Button
+            android:id="@+id/alexander402_buttonFragmentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summer"
+            android:layout_marginLeft="7dp" />
+
+        <!-- Button to switch to Fragment Three -->
+        <Button
+            android:id="@+id/alexander402_buttonFragmentThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fall"
+            android:layout_marginLeft="7dp" />
+
+        <!-- Button to switch to Fragment Four -->
+        <Button
+            android:id="@+id/alexander402_buttonFragmentFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Winter"
+            android:layout_marginLeft="7dp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

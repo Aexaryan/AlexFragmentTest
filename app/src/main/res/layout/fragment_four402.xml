@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:gravity="center">
 
     <!-- Image before TextView -->
     <ImageView
-        android:id="@+id/alexander402_imageView1"
+        android:id="@+id/alexander402_imageView4"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:src="@drawable/spring"
-        tools:ignore="ExtraText" />
+        android:src="@drawable/winter" />
 
+    <!-- TextView below the ImageView -->
     <TextView
         android:id="@+id/alexander402_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment One"
-        android:textSize="20sp" />
+        android:text="Winter"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />  <!-- Optional margin for spacing -->
+
 </LinearLayout>

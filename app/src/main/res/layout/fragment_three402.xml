@@ -8,16 +8,16 @@
 
     <!-- Image before TextView -->
     <ImageView
-        android:id="@+id/alexander402_imageView1"
+        android:id="@+id/alexander402_imageView3"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:src="@drawable/spring"
+        android:src="@drawable/fall2"
         tools:ignore="ExtraText" />
 
     <TextView
         android:id="@+id/alexander402_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment One"
+        android:text="fall"
         android:textSize="20sp" />
 </LinearLayout>
